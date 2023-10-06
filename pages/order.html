@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	
+		<title> Food WRLD </title>
+		<link rel="stylesheet" href="..\CSS\style 1.css">
+		
+		
+		 <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+		<link rel="shortcut icon" href="..\images\WRLD.png">
+		
+		
+		<style>
+		
+		body{
+		background-image:url('../images/ope.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		}
+		
+		
+		
+		</style>
+	</head>
+
+<body>
+
+	
+
+<!--linking  pages-->
+<nav>
+		
+		<input type="checkbox" id="check">
+		<label for="check">
+		<i class="fa fa-bars" aria-hidden="true" id="btn"></i>
+		 <i class="fa fa-times" aria-hidden="true" id="cancel"></i>
+		 </label>
+		
+		<ul>
+	
+		<li><a href="..\index.html"> HOME </a></li>
+		<li><a href="menu.html"> MENU </A></li>
+		<li><a href="order.html" > ORDER DELIVERY & TAKEOUT </a><li>
+		<li><a href="contact us.html" > GET IN TOUCH</a></li>
+	
+		</ul>
+	</nav>
+	 
+    <a href="menu.html" >
+	 <div class="wrapper">
+		<div class="image">
+		
+			<img src="..\images\out.jpg">
+			<div class="content">
+				<h3> ORDER TAKEOUT</H3>
+				
+		    </div>
+	    </div>
+	 </div>
+	</a>
+	 
+	 <a href="menu.html">
+	 <div class="wrapper">
+		<div class="image">
+		
+			<img src="..\images\deli.jpg">
+			<div class="content">
+				<h3> ORDER DELIVERY</H3>
+				
+		    </div>
+	     </div>
+	 </div>
+	</a>
+	 
+	
+	 
+	 <a href="#" class="fas fa-angle-up" id="scroll-top"></a>
+	 
+
+<section class="footer">
+
+		<div class="share">
+		
+			<a href="#" class="btn"><i class='fab fa-twitter'></i></a>
+			
+			<a href="#" class="btn"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+			<a href="#" class="btn"><i class='fab fa-facebook'></i></a>
+			
+			<a href="#" class="btn"><i class='fab fa-youtube'></i></a>
+			
+			
+			
+			
+		</div>	
+
+	<h1 class="credit"> Created by <span>Mr. Manasseh Cobbina   </span> Copyright @ 2023 Food WRLD 
+	| All righs must be reserved </h1>
+	
+</section>
+
+
+	
+<script>
+
+	window.onscroll = () =>{
+
+	menu.classList.remove('fa-times');
+	navbar.classList.remove('active');
+	
+	if(window.scrollY > 60){
+		document.querySelector('#scroll-top').classList.add('active');
+	}else{
+		document.querySelector('#scroll-top').classList.remove('active');
+	}
+}
+
+
+</script>
+		 
+	 
+</body>
+</html>

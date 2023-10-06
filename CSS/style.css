@@ -1,0 +1,275 @@
+
+  *{
+	  margin: 0;
+	  padding: 0;
+	  text-decoration:none;
+	  list-style:none;
+	  box-sizing: border-box;
+  }
+  
+ 
+a{
+	font-family:times new roman sans serif;
+	color: white;
+	text-align:center;
+	position:relative;
+	display:inline-block;
+	padding: 110px 46px;
+	
+}
+
+
+/* how to make dash line under link*/
+li {
+  float: left;
+}
+
+li a:after {
+  content:"";
+  position: absolute;
+  background-color:white;
+  height: 3px;
+  width:0;
+  left:0;
+  bottom:80px;
+  transition:0.3s;
+}
+
+a:hover{
+	color:grey;
+	
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover:after {
+  width:100%;
+}
+
+
+
+
+ .menu{
+	 padding:0 10px 30px 10px;
+	 display:grid;
+	 grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+	 grid-gap:20px 40px;
+ }
+ 
+ 
+ .header{
+	 background-color:lightsalmon;
+	 color:white;
+	 margin-bottom:30px;
+	 padding:30px 0;
+	 grid-column:1/-1;
+	 text-align:center;
+	 border-radius:0 0 30px 30px;
+ }
+ 
+ 
+ .header>h1{
+	 font-weight:400;
+	 font-size:35px;
+	 letter-spacing:9.5px;
+	 margin-bottom:10px;
+ }
+ 
+ 
+ .header>h3{
+	 font-weight:600;
+	 font-size:22px;
+	 letter-spacing:5px;
+	
+ }
+ 
+ .food-items{
+	 display:grid;
+	 position:relative;
+	 grid-template-rows:auto 1fr;
+	 border-radius:25px; 
+	 box-shadow:0 0 15px white;
+ }
+ 
+ .food-items img{
+	display:grid;
+	 position:relative;
+	width:100%;
+	 border-radius:15px 15px 0 0; 
+ }
+ 
+h1{
+	grid-columns:1/-1;
+	text-align:center;
+}
+ 
+ .details{
+	 padding:20px 10px;
+	 display:grid;
+	 grid-template-rows:auto 1fr 50px;
+	 grid-row-gap:15px;
+ }
+ 
+ .details-sub{
+	 display:grid;
+	 grid-template-columns:auto auto;
+	
+ }
+ 
+ .details-sub>h5{
+	 font-weight:600;
+	 font-size:18px;
+ }
+ 
+ .price{
+	 text-align:right;
+ }
+ 
+ .details>p{
+	 color:grey;
+	 font-size:15px;
+	 line-height:28px;
+	 font-weight:400;
+	 align-self: stretch;
+ }
+ 
+ 
+ .details>button{
+	 background-color:lightsalmon;
+	 border:none;
+	 color:white;
+	 font-size:16px;
+	 font-weight:600;
+	 border-radius:10px;
+	 width:180px;
+ }
+ 
+
+
+.loader{
+	position:fixed;
+	top:0%;
+	left:0%;
+	width:100vw;
+	height:100vh;
+	background:ghostwhite;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	transition: opacity 0.75s, visibility 0.75s; 
+	
+}
+
+.loader--hidden{
+	opacity:0;
+	visibility:hidden;
+}
+
+.loader::after{
+	content:"";
+	width:75px;
+	height:75px;
+	border:15px solid #f63d3a;
+	border-top-color:#19a68c;
+	border-bottom-color:#fda543;
+	border-left-color:#193b48;
+	border-radius:50%;
+	animation:loading 0.75s ease infinite;
+}
+
+@keyframes loading{
+	from {
+		transform:rotate(0turn)
+	}
+	to{
+		transform: rotate(1turn)
+	}
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<!--linking  pages-->
+
+<div class="center">
+	
+	
+	<ul>
+	
+		<li><a href="..\homee.html"> HOME </a></li>
+		<li><a href="menu.html"> MENU </A></li>
+		<li><a href="order.html" >  ORDER DELIVERY & TAKEOUT </a><li>
+		<li><img src="tp.png" height="200px" width="200px"></a></li>
+		<li><a href="gallery.html" > PURCHASE A GIFT CARD</a></li>
+		<li><a href="event.html" > PRIVATE EVENTS</a></li>
+		<li><a href="contact us.html" > GET IN TOUCH</a></li>
+	</ul>
+
+</div>
+	 
+	 	 
+	 
+
+ 
+ 
